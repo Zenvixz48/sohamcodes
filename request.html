@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Start Your Project | Soham</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+
+body{
+
+    min-height:100vh;
+
+    background:#050505;
+
+    color:white;
+
+    overflow-x:hidden;
+
+}
+
+
+body::before{
+
+    content:"";
+
+    position:fixed;
+
+    width:500px;
+    height:500px;
+
+    background:#8B5CF6;
+
+    filter:blur(180px);
+
+    opacity:.25;
+
+    top:-150px;
+    left:-150px;
+
+    z-index:-1;
+
+}
+
+
+body::after{
+
+    content:"";
+
+    position:fixed;
+
+    width:500px;
+    height:500px;
+
+    background:#06B6D4;
+
+    filter:blur(180px);
+
+    opacity:.2;
+
+    bottom:-150px;
+    right:-150px;
+
+    z-index:-1;
+
+}
+
+
+
+/* BACK BUTTON */
+
+.back-button{
+
+    position:fixed;
+
+    top:30px;
+    left:30px;
+
+    text-decoration:none;
+
+    color:white;
+
+    padding:12px 22px;
+
+    border-radius:15px;
+
+    background:rgba(255,255,255,.06);
+
+    border:1px solid rgba(255,255,255,.1);
+
+    backdrop-filter:blur(20px);
+
+    transition:.3s;
+
+}
+
+
+.back-button:hover{
+
+    background:#8B5CF6;
+
+    transform:translateX(-5px);
+
+}
+
+
+
+/* MAIN */
+
+
+.container{
+
+    max-width:750px;
+
+    margin:100px auto;
+
+    padding:20px;
+
+}
+
+
+
+.heading{
+
+    text-align:center;
+
+    margin-bottom:45px;
+
+}
+
+
+
+.tag{
+
+    color:#8B5CF6;
+
+    letter-spacing:3px;
+
+    font-size:14px;
+
+}
+
+
+.heading h1{
+
+    font-size:50px;
+
+    margin:20px 0;
+
+}
+
+
+.heading p{
+
+    color:#aaa;
+
+}
+
+
+
+/* FORM */
+
+
+.form-box{
+
+    padding:45px;
+
+    border-radius:30px;
+
+    background:rgba(255,255,255,.05);
+
+    border:1px solid rgba(255,255,255,.1);
+
+    backdrop-filter:blur(20px);
+
+}
+
+
+
+label{
+
+    display:block;
+
+    margin-top:22px;
+
+    margin-bottom:8px;
+
+    font-weight:600;
+
+}
+
+
+
+label span{
+
+    color:#888;
+
+    font-size:13px;
+
+}
+
+
+
+input,
+select,
+textarea{
+
+    width:100%;
+
+    padding:15px 18px;
+
+    border-radius:14px;
+
+    background:rgba(255,255,255,.06);
+
+    border:1px solid rgba(255,255,255,.1);
+
+    color:white;
+
+    outline:none;
+
+}
+
+
+
+select option{
+
+    background:#111;
+
+}
+
+
+textarea{
+
+    height:150px;
+
+    resize:none;
+
+}
+
+
+
+input:focus,
+select:focus,
+textarea:focus{
+
+    border-color:#8B5CF6;
+
+}
+
+
+
+/* BUTTON */
+
+
+button{
+
+    width:100%;
+
+    margin-top:35px;
+
+    padding:16px;
+
+    border:none;
+
+    border-radius:15px;
+
+    background:linear-gradient(
+    90deg,
+    #8B5CF6,
+    #06B6D4
+    );
+
+    color:white;
+
+    font-size:16px;
+
+    font-weight:700;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+
+button:hover{
+
+    transform:translateY(-5px);
+
+}
+
+
+
+/* POPUP */
+
+
+.popup{
+
+    position:fixed;
+
+    top:50%;
+
+    left:50%;
+
+    transform:translate(-50%,-50%) scale(0);
+
+    padding:35px;
+
+    width:350px;
+
+    text-align:center;
+
+    border-radius:25px;
+
+    background:rgba(20,20,20,.8);
+
+    backdrop-filter:blur(20px);
+
+    border:1px solid rgba(255,255,255,.1);
+
+    transition:.3s;
+
+}
+
+
+.popup.active{
+
+    transform:translate(-50%,-50%) scale(1);
+
+}
+
+
+
+.popup h2{
+
+    margin-bottom:10px;
+
+}
+
+
+.popup p{
+
+    color:#aaa;
+
+}
+
+
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<a href="index.html" class="back-button">
+← Back To Home
+</a>
+
+
+
+<div class="container">
+
+
+<div class="heading">
+
+<p class="tag">
+START YOUR PROJECT
+</p>
+
+
+<h1>
+Let's Build Something Amazing
+</h1>
+
+
+<p>
+Tell me your idea and let's create your website.
+</p>
+
+
+</div>
+
+
+
+<div class="form-box">
+
+
+<form id="requestForm">
+
+
+<label>
+Discord Username <span>(Optional)</span>
+</label>
+
+<input id="discord" type="text" placeholder="Your Discord username">
+
+
+
+<label>
+First Name
+</label>
+
+<input id="firstName" type="text" placeholder="Your first name" required>
+
+
+
+<label>
+Last Name
+</label>
+
+<input id="lastName" type="text" placeholder="Your last name" required>
+
+
+
+<label>
+Gmail
+</label>
+
+<input id="email" type="email" placeholder="example@gmail.com" required>
+
+
+
+<label>
+Website Type
+</label>
+
+<select id="websiteType" required>
+
+<option>Select website type</option>
+
+<option>Portfolio Website</option>
+
+<option>Business Website</option>
+
+<option>Gaming Website</option>
+
+<option>Other</option>
+
+</select>
+
+
+
+<label>
+Describe Your Idea
+</label>
+
+
+<textarea id="description" placeholder="Tell me about your website idea..." required></textarea>
+
+
+
+<button type="submit">
+Send Request →
+</button>
+
+
+</form>
+
+
+</div>
+
+
+</div>
+
+
+
+<div class="popup" id="popup">
+
+<h2>
+✓ Request Sent
+</h2>
+
+<p>
+Your information has been sent to owner.
+</p>
+
+</div>
+
+
+
+<script>
+
+
+const scriptURL = "https://script.google.com/macros/s/AKfycbzZzyZ0psq5KRQ2b1zG-6oQO42JdywuuQiTd_8h9Ypua8GQvZ1PdrAHJBrhuMtOh5CD/exec";
+
+
+const form = document.getElementById("requestForm");
+
+const popup = document.getElementById("popup");
+
+
+
+form.addEventListener("submit", function(e){
+
+
+e.preventDefault();
+
+
+
+const data = {
+
+
+discord: document.getElementById("discord").value,
+
+
+firstName: document.getElementById("firstName").value,
+
+
+lastName: document.getElementById("lastName").value,
+
+
+email: document.getElementById("email").value,
+
+
+websiteType: document.getElementById("websiteType").value,
+
+
+description: document.getElementById("description").value
+
+
+};
+
+
+
+fetch(scriptURL, {
+
+
+method:"POST",
+
+
+body:JSON.stringify(data)
+
+
+})
+
+
+.then(res=>res.json())
+
+
+.then(()=>{
+
+
+popup.classList.add("active");
+
+
+form.reset();
+
+
+setTimeout(()=>{
+
+
+popup.classList.remove("active");
+
+
+},3000);
+
+
+})
+
+
+.catch(err=>{
+
+    alert("Something went wrong");
+
+    console.error("ERROR:", err);
+
+});
+
+
+
+});
+
+
+
+</script>
+
+
+</body>
+
+</html>
