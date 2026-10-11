@@ -1,615 +1,81 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
 <head>
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Start Your Project | Soham</title>
-
-<style>
-
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Arial, sans-serif;
-}
-
-
-body{
-
-    min-height:100vh;
-
-    background:#050505;
-
-    color:white;
-
-    overflow-x:hidden;
-
-}
-
-
-body::before{
-
-    content:"";
-
-    position:fixed;
-
-    width:500px;
-    height:500px;
-
-    background:#8B5CF6;
-
-    filter:blur(180px);
-
-    opacity:.25;
-
-    top:-150px;
-    left:-150px;
-
-    z-index:-1;
-
-}
-
-
-body::after{
-
-    content:"";
-
-    position:fixed;
-
-    width:500px;
-    height:500px;
-
-    background:#06B6D4;
-
-    filter:blur(180px);
-
-    opacity:.2;
-
-    bottom:-150px;
-    right:-150px;
-
-    z-index:-1;
-
-}
-
-
-
-/* BACK BUTTON */
-
-.back-button{
-
-    position:fixed;
-
-    top:30px;
-    left:30px;
-
-    text-decoration:none;
-
-    color:white;
-
-    padding:12px 22px;
-
-    border-radius:15px;
-
-    background:rgba(255,255,255,.06);
-
-    border:1px solid rgba(255,255,255,.1);
-
-    backdrop-filter:blur(20px);
-
-    transition:.3s;
-
-}
-
-
-.back-button:hover{
-
-    background:#8B5CF6;
-
-    transform:translateX(-5px);
-
-}
-
-
-
-/* MAIN */
-
-
-.container{
-
-    max-width:750px;
-
-    margin:100px auto;
-
-    padding:20px;
-
-}
-
-
-
-.heading{
-
-    text-align:center;
-
-    margin-bottom:45px;
-
-}
-
-
-
-.tag{
-
-    color:#8B5CF6;
-
-    letter-spacing:3px;
-
-    font-size:14px;
-
-}
-
-
-.heading h1{
-
-    font-size:50px;
-
-    margin:20px 0;
-
-}
-
-
-.heading p{
-
-    color:#aaa;
-
-}
-
-
-
-/* FORM */
-
-
-.form-box{
-
-    padding:45px;
-
-    border-radius:30px;
-
-    background:rgba(255,255,255,.05);
-
-    border:1px solid rgba(255,255,255,.1);
-
-    backdrop-filter:blur(20px);
-
-}
-
-
-
-label{
-
-    display:block;
-
-    margin-top:22px;
-
-    margin-bottom:8px;
-
-    font-weight:600;
-
-}
-
-
-
-label span{
-
-    color:#888;
-
-    font-size:13px;
-
-}
-
-
-
-input,
-select,
-textarea{
-
-    width:100%;
-
-    padding:15px 18px;
-
-    border-radius:14px;
-
-    background:rgba(255,255,255,.06);
-
-    border:1px solid rgba(255,255,255,.1);
-
-    color:white;
-
-    outline:none;
-
-}
-
-
-
-select option{
-
-    background:#111;
-
-}
-
-
-textarea{
-
-    height:150px;
-
-    resize:none;
-
-}
-
-
-
-input:focus,
-select:focus,
-textarea:focus{
-
-    border-color:#8B5CF6;
-
-}
-
-
-
-/* BUTTON */
-
-
-button{
-
-    width:100%;
-
-    margin-top:35px;
-
-    padding:16px;
-
-    border:none;
-
-    border-radius:15px;
-
-    background:linear-gradient(
-    90deg,
-    #8B5CF6,
-    #06B6D4
-    );
-
-    color:white;
-
-    font-size:16px;
-
-    font-weight:700;
-
-    cursor:pointer;
-
-    transition:.3s;
-
-}
-
-
-button:hover{
-
-    transform:translateY(-5px);
-
-}
-
-
-
-/* POPUP */
-
-
-.popup{
-
-    position:fixed;
-
-    top:50%;
-
-    left:50%;
-
-    transform:translate(-50%,-50%) scale(0);
-
-    padding:35px;
-
-    width:350px;
-
-    text-align:center;
-
-    border-radius:25px;
-
-    background:rgba(20,20,20,.8);
-
-    backdrop-filter:blur(20px);
-
-    border:1px solid rgba(255,255,255,.1);
-
-    transition:.3s;
-
-}
-
-
-.popup.active{
-
-    transform:translate(-50%,-50%) scale(1);
-
-}
-
-
-
-.popup h2{
-
-    margin-bottom:10px;
-
-}
-
-
-.popup p{
-
-    color:#aaa;
-
-}
-
-
-
-</style>
-
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f1e8">
+  <meta name="description" content="Tell Soham about your website project using the project request form.">
+  <title>Start a Project — Soham Borase</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
-
-
 <body>
-
-    <div class="aurora-bg">
-
-    <div class="aurora purple"></div>
-    <div class="aurora blue"></div>
-
-</div>
-
-
-<div class="background">
-
-    <div class="blur1"></div>
-    <div class="blur2"></div>
-
-    <div id="particles"></div>
-
-</div>
-
-
-<div class="cursor-light"></div>
-
-<div class="cursor"></div>
-
-<a href="index.html" class="back-button">
-← Back To Home
-</a>
-
-
-
-<div class="container">
-
-
-<div class="heading">
-
-<p class="tag">
-START YOUR PROJECT
-</p>
-
-
-<h1>
-Let's Build Something Amazing
-</h1>
-
-
-<p>
-Tell me your idea and let's create your website.
-</p>
-
-
-</div>
-
-
-
-<div class="form-box">
-
-
-<form id="requestForm">
-
-
-<label>
-Discord Username <span>(Optional)</span>
-</label>
-
-<input id="discord" type="text" placeholder="Your Discord username">
-
-
-
-<label>
-First Name
-</label>
-
-<input id="firstName" type="text" placeholder="Your first name" required>
-
-
-
-<label>
-Last Name
-</label>
-
-<input id="lastName" type="text" placeholder="Your last name" required>
-
-
-
-<label>
-Gmail
-</label>
-
-<input id="email" type="email" placeholder="example@gmail.com" required>
-
-
-
-<label>
-Website Type
-</label>
-
-<select id="websiteType" required>
-
-<option>Select website type</option>
-
-<option>Portfolio Website</option>
-
-<option>Business Website</option>
-
-<option>Gaming Website</option>
-
-<option>Other</option>
-
-</select>
-
-
-
-<label>
-Describe Your Idea
-</label>
-
-
-<textarea id="description" placeholder="Tell me about your website idea..." required></textarea>
-
-
-
-<button type="submit">
-Send Request →
-</button>
-
-
-</form>
-
-
-</div>
-
-
-</div>
-
-
-
-<div class="popup" id="popup">
-
-<h2>
-✓ Request Sent
-</h2>
-
-<p>
-Your information has been sent to owner.
-</p>
-
-</div>
-
-
-
-<script>
-
-
-const scriptURL = "https://script.google.com/macros/s/AKfycbzZzyZ0psq5KRQ2b1zG-6oQO42JdywuuQiTd_8h9Ypua8GQvZ1PdrAHJBrhuMtOh5CD/exec";
-
-
-const form = document.getElementById("requestForm");
-
-const popup = document.getElementById("popup");
-
-
-
-form.addEventListener("submit", function(e){
-
-
-e.preventDefault();
-
-
-
-const data = {
-
-
-discord: document.getElementById("discord").value,
-
-
-firstName: document.getElementById("firstName").value,
-
-
-lastName: document.getElementById("lastName").value,
-
-
-email: document.getElementById("email").value,
-
-
-websiteType: document.getElementById("websiteType").value,
-
-
-description: document.getElementById("description").value
-
-
-};
-
-
-
-fetch(scriptURL, {
-
-
-method:"POST",
-
-
-body:JSON.stringify(data)
-
-
-})
-
-
-.then(res=>res.json())
-
-
-.then(()=>{
-
-
-popup.classList.add("active");
-
-
-form.reset();
-
-
-setTimeout(()=>{
-
-
-popup.classList.remove("active");
-
-
-},3000);
-
-
-})
-
-
-.catch(err=>{
-
-    alert("Something went wrong");
-
-    console.error("ERROR:", err);
-
-});
-
-
-
-});
-
-
-
-</script>
-
-
+  <div class="page-loader" id="pageLoader" role="status" aria-label="Loading Soham portfolio">
+    <div class="loader-inner">
+      <div class="loader-emblem" aria-hidden="true"><span></span></div>
+      <p class="loader-word">SOHAM <i>/</i> WEB DEVELOPER</p>
+      <div class="loader-track" aria-hidden="true"><span></span></div>
+      <p class="loader-caption">BUILDING YOUR EXPERIENCE</p>
+    </div>
+  </div>
+  </div>
+  <div class="page-progress" aria-hidden="true"></div>
+  <div class="cursor-glow" aria-hidden="true"></div>
+  <div class="grain" aria-hidden="true"></div>
+  <header class="site-header">
+    <nav class="nav shell" aria-label="Main navigation">
+      <a class="brand" href="index.html" aria-label="Soham home">
+        <span class="brand-icon" aria-hidden="true"><span class="brand-initial">S</span></span>
+        <span class="brand-copy">SOHAM<span class="brand-sub">/ WEB DEVELOPER</span></span>
+      </a>
+      <div class="nav-links" id="siteMenu">
+        <a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="mywork.html">My Work</a>
+<a href="contact.html" aria-current="page">Contact</a>
+        <a class="nav-cta" href="request.html">Start a project <span class="arrow" aria-hidden="true">↗</span></a>
+      </div>
+      <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="siteMenu"><span></span><span></span></button>
+    </nav>
+  </header>
+  <main>
+    <section class="request-hero shell">
+      <div class="request-layout">
+        <div class="request-intro"><p class="section-kicker">LET'S MAKE SOMETHING</p><h1>Bring the idea.<br><span>I'll bring the pixels.</span></h1><p>Share a bit about the website you have in mind. A rough idea is totally fine — the more you tell me, the easier it is to understand what you need.</p><div class="request-aside"><b>↗</b><span>PROJECT INQUIRIES<br><strong style="color:var(--ink);font-weight:500">A few details to get started</strong></span></div></div>
+        <div class="form-box">
+          <div class="form-heading"><h2>Tell me about your project</h2><p>Fields marked with * are required.</p></div>
+          <form id="requestForm" novalidate>
+            <div class="form-grid">
+              <div class="form-field"><label for="firstName">First name <span>*</span></label><input id="firstName" name="firstName" type="text" placeholder="Your first name" autocomplete="given-name" required></div>
+              <div class="form-field"><label for="lastName">Last name <span>*</span></label><input id="lastName" name="lastName" type="text" placeholder="Your last name" autocomplete="family-name" required></div>
+              <div class="form-field full"><label for="email">Email address <span>*</span></label><input id="email" name="email" type="email" placeholder="you@example.com" autocomplete="email" required></div>
+              <div class="form-field full"><label for="discord">Discord username <span>Optional</span></label><input id="discord" name="discord" type="text" placeholder="Your Discord username (if you use it)"></div>
+              <div class="form-field full"><label for="websiteType">What kind of website? <span>*</span></label><select id="websiteType" name="websiteType" required><option value="" selected disabled>Choose a project type</option><option>Portfolio Website</option><option>Business Website</option><option>Gaming Website</option><option>Creator Website</option><option>Landing Page</option><option>Other</option></select></div>
+              <div class="form-field full"><label for="description">Tell me about the idea <span>*</span></label><textarea id="description" name="description" minlength="15" maxlength="2500" placeholder="What's the website for? What should visitors be able to do? Any design ideas you already have?" required></textarea><div class="field-hint"><span>At least 15 characters helps me understand it.</span><span id="charCount">0 / 2500</span></div></div>
+            </div>
+            <div id="formStatus" role="status" aria-live="polite" hidden></div>
+            <div class="submit-row"><button class="button button-primary submit-button" id="submitButton" type="submit"><span class="button-label">Send project request</span><span class="button-arrow" aria-hidden="true">↗</span></button></div>
+            <p class="request-footnote">Your details are used to respond to this project inquiry. Please don't include passwords or sensitive information.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+    <div class="success-overlay" id="successOverlay" hidden><section class="success-card" role="dialog" aria-modal="true" aria-labelledby="successTitle"><div class="success-icon">✓</div><h2 id="successTitle">Request sent.</h2><p>Thanks for sharing your idea. Your request was accepted by the form service.</p><button class="button button-dark" id="closeSuccess" type="button">Back to the website <span class="button-arrow">↗</span></button></section></div>
+  </main>
+  <footer class="site-footer">
+    <div class="shell">
+      <div class="footer-main">
+        <a class="footer-brand" href="index.html"><span class="brand-icon"><span class="brand-initial">S</span></span> SOHAM</a>
+        <div class="footer-links"><a href="about.html">About</a><a href="mywork.html">My work</a><a href="contact.html">Contact</a><a href="request.html">Start a project ↗</a></div>
+      </div>
+      <div class="footer-note"><span>Designed with intention · Built for the web</span><span>© <span id="year"></span> Soham Borase</span></div>
+    </div>
+  </footer>
+  <script src="js/form.js" defer></script>
+  <script>document.getElementById('year')?.replaceChildren(document.createTextNode(new Date().getFullYear()));</script>
+  <script src="js/app.js" defer></script>
 </body>
-
 </html>
