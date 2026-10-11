@@ -1,537 +1,126 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
 <head>
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Soham | Web Developer</title>
-
-    <!-- CSS -->
-    <link rel="stylesheet" href="css/style.css">
-<link rel="stylesheet" href="css/navbar.css">
-<link rel="stylesheet" href="css/hero.css">
-<link rel="stylesheet" href="css/animations.css">
-<link rel="stylesheet" href="css/responsive.css">
-    <!-- Google Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f1e8">
+  <meta name="description" content="Soham Borase builds thoughtful, modern and responsive websites for creators, businesses and personal brands.">
+  <title>Soham Borase — Web Developer</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
-    <div class="loader">
-
-    <div class="loader-content">
-
-        <h1>SOHAM</h1>
-
-        <p>Building Digital Experiences</p>
-
-        <div class="loader-bar">
-
-            <span></span>
-
-        </div>
-
+  <div class="page-loader" id="pageLoader" role="status" aria-label="Loading Soham portfolio">
+    <div class="loader-inner">
+      <div class="loader-emblem" aria-hidden="true"><span></span></div>
+      <p class="loader-word">SOHAM <i>/</i> WEB DEVELOPER</p>
+      <div class="loader-track" aria-hidden="true"><span></span></div>
+      <p class="loader-caption">BUILDING YOUR EXPERIENCE</p>
     </div>
+  </div>
+  </div>
+  <div class="page-progress" aria-hidden="true"></div>
+  <div class="cursor-glow" aria-hidden="true"></div>
+  <div class="grain" aria-hidden="true"></div>
+  <header class="site-header">
+    <nav class="nav shell" aria-label="Main navigation">
+      <a class="brand" href="index.html" aria-label="Soham home">
+        <span class="brand-icon" aria-hidden="true"><span class="brand-initial">S</span></span>
+        <span class="brand-copy">SOHAM<span class="brand-sub">/ WEB DEVELOPER</span></span>
+      </a>
+      <div class="nav-links" id="siteMenu">
+        <a href="index.html" aria-current="page">Home</a>
+<a href="about.html">About</a>
+<a href="mywork.html">My Work</a>
+<a href="contact.html">Contact</a>
+        <a class="nav-cta" href="request.html">Start a project <span class="arrow" aria-hidden="true">↗</span></a>
+      </div>
+      <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="siteMenu"><span></span><span></span></button>
+    </nav>
+  </header>
+  <main>
+    <section class="hero shell" id="top">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="eyebrow-dot"></span> Independent web developer <span class="mono">/ India</span></p>
+        <h1>Ideas deserve<br><span class="line-two">a better web<span class="period">.</span></span></h1>
+        <p class="hero-intro">I turn ideas into clear, characterful websites — combining thoughtful design, useful interactions and responsive code that feels good on every screen.</p>
+        <div class="hero-actions">
+          <a class="button button-primary magnetic" href="mywork.html">Explore my work <span class="button-arrow" aria-hidden="true">↗</span></a>
+          <a class="text-link" href="request.html">Have a project? <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="hero-meta"><span><i></i> Design-minded development</span><span>HTML · CSS · JavaScript</span></div>
+      </div>
+      <div class="hero-art" aria-label="Abstract animated S monogram artwork">
+        <div class="art-orbit one"></div><div class="art-orbit two"></div><div class="art-orbit three"></div>
+        <div class="art-core"><span class="core-mark">S.</span><span class="core-code">&lt;build /&gt;</span></div>
+        <div class="float-chip chip-a"><span class="chip-symbol">✳</span><span>Made with care<small>DETAILS MATTER</small></span></div>
+        <div class="float-chip chip-b"><span class="chip-symbol">↗</span><span>Responsive by design<small>SMALL TO LARGE</small></span></div>
+        <span class="art-coordinate">FIG. 001 / DIGITAL CRAFT</span>
+      </div>
+    </section>
 
-</div>
-    <div class="cursor-light"></div>
-    <div class="aurora-bg">
+    <div class="marquee" aria-label="Design, code, ship, improve"><div class="marquee-track" aria-hidden="true">
+      <span>DESIGN WITH PURPOSE</span><b>✳</b><span>BUILD WITH CARE</span><b>✳</b><span>MAKE IT USEFUL</span><b>✳</b><span>DETAILS MATTER</span><b>✳</b><span>DESIGN WITH PURPOSE</span><b>✳</b><span>BUILD WITH CARE</span><b>✳</b><span>MAKE IT USEFUL</span><b>✳</b><span>DETAILS MATTER</span><b>✳</b>
+    </div></div>
 
-    <div class="aurora purple"></div>
+    <section class="section shell" id="services">
+      <div class="section-head reveal">
+        <div><p class="section-kicker">01 / WHAT I DO</p><h2>Good design.<br><span>Solid foundations.</span></h2></div>
+        <p class="section-desc">A website should look distinctive, work smoothly and help people understand what you do. That's the standard I build towards.</p>
+      </div>
+      <div class="service-list">
+        <article class="service-row reveal"><span class="service-number">01</span><span class="service-symbol">⌘</span><div class="service-main"><h3>Website development</h3><p>Responsive websites tailored to your project, audience and goals.</p></div><div class="service-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div><span class="service-arrow">↗</span></article>
+        <article class="service-row reveal"><span class="service-number">02</span><span class="service-symbol">✳</span><div class="service-main"><h3>Visual direction</h3><p>A consistent look, clear hierarchy and small details that make a site feel considered.</p></div><div class="service-tags"><span>Layout</span><span>Typography</span><span>UI</span></div><span class="service-arrow">↗</span></article>
+        <article class="service-row reveal"><span class="service-number">03</span><span class="service-symbol">↝</span><div class="service-main"><h3>Interaction & motion</h3><p>Purposeful transitions, scroll-led moments and interactions that never get in the way.</p></div><div class="service-tags"><span>Motion</span><span>UX</span><span>Performance</span></div><span class="service-arrow">↗</span></article>
+      </div>
+    </section>
 
-    <div class="aurora blue"></div>
+    <section class="story-section" id="story" aria-label="My design and development process">
+      <div class="story-sticky" data-step="0">
+        <div class="story-shell">
+          <div class="story-top"><span class="story-status"></span><span>THOUGHT → DESIGN → BUILD</span></div>
+          <div class="story-middle">
+            <article class="story-scene is-active" data-scene="0" aria-hidden="false"><span class="scene-count">CHAPTER 01 / THE SPARK</span><h2>Every good site<br>starts with a <span class="scene-accent">why.</span></h2><p>First, we find what matters: the idea, the people it serves and the feeling it should leave behind.</p></article>
+            <article class="story-scene" data-scene="1" aria-hidden="true"><span class="scene-count">CHAPTER 02 / THE SHAPE</span><h2>Give the idea<br>a <span class="scene-accent">point of view.</span></h2><p>Shape, type, colour and rhythm work together. Every choice should feel intentional, not just decorative.</p></article>
+            <article class="story-scene" data-scene="2" aria-hidden="true"><span class="scene-count">CHAPTER 03 / THE BUILD</span><h2>Then make it<br>feel <span class="scene-accent">alive.</span></h2><p>Responsive code, useful movement and careful finishing turn a visual idea into an experience people can use.</p></article>
+            <div class="story-illustration" aria-hidden="true"><div class="shape-outline"></div><div class="shape-main">S.</div></div>
+          </div>
+          <div class="story-bottom"><p class="story-caption">Scroll to move through each chapter. The colour, composition and story shift together.</p><div class="story-progress"><span class="story-progress-fill"></span></div><span class="story-step-count">01 / 03</span><button class="story-next" type="button" aria-label="Move to next story chapter">NEXT <span aria-hidden="true">↘</span></button></div>
+        </div>
+      </div>
+    </section>
 
-</div>
+    <section class="section shell" id="selected-work">
+      <div class="section-head reveal"><div><p class="section-kicker">02 / SELECTED WORK</p><h2>Made for real<br><span>people and ideas.</span></h2></div><p class="section-desc">A few projects from my learning and building journey — each with its own audience, purpose and personality.</p></div>
+      <div class="work-grid">
+        <article class="project-card reveal" data-tilt><a class="project-visual" href="mywork.html" aria-label="View Zenvixz project"><span class="project-no">PROJECT / 001</span><img src="images/zenvixz.png" alt="Preview of the Zenvixz creator website" loading="lazy"><span class="project-hover" aria-hidden="true">↗</span></a><div class="project-details"><div><p class="project-type">CREATOR / WEBSITE</p><h3>Zenvixz</h3><p>A web home for a gaming creator, made to bring the channel identity and its content together.</p><div class="project-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div></div><a class="project-link" href="mywork.html">Explore <span>↗</span></a></div></article>
+        <article class="project-card reveal" data-tilt><a class="project-visual" href="mywork.html" aria-label="View Rohini's Beauty Salon project"><span class="project-no">PROJECT / 002</span><img src="images/rohini.png" alt="Preview of Rohini's Beauty Salon website" loading="lazy"><span class="project-hover" aria-hidden="true">↗</span></a><div class="project-details"><div><p class="project-type">LOCAL BUSINESS / WEBSITE</p><h3>Rohini's Beauty Salon</h3><p>A business website built to present services clearly and make it easier for customers to connect.</p><div class="project-tags"><span>Responsive</span><span>Business</span><span>UI</span></div></div><a class="project-link" href="mywork.html">Explore <span>↗</span></a></div></article>
+      </div>
+      <div class="center-action"><a class="button button-outline magnetic" href="mywork.html">View all projects <span class="button-arrow">↗</span></a></div>
+    </section>
 
-    <!-- Mouse Glow -->
-    <div class="cursor"></div>
+    <section class="section about-teaser">
+      <div class="shell about-teaser-grid">
+        <div class="about-mark reveal" data-reveal="left" aria-hidden="true"><div class="about-mark-core">S.</div></div>
+        <div class="about-copy reveal" data-reveal="right"><p class="section-kicker">03 / A LITTLE ABOUT ME</p><h2>Curious by nature.<br><span>Builder by choice.</span></h2><p>I'm Soham, a web developer who enjoys turning an early idea into something clear, useful and full of character. I'm learning with every project and bringing that curiosity into the details.</p><div class="skill-cloud"><span>HTML & CSS</span><span>JavaScript</span><span>Responsive UI</span><span>Creative problem-solving</span></div><a class="button button-dark magnetic" href="about.html">More about me <span class="button-arrow">↗</span></a></div>
+      </div>
+    </section>
 
-    <!-- Animated Background -->
-    <div class="background">
-        <div class="blur1"></div>
-        <div class="blur2"></div>
-        <div id="particles"></div>
+    <section class="contact-band"><div class="shell contact-inner"><div><p class="section-kicker">HAVE SOMETHING IN MIND?</p><h2>Let's make it<br><span>real.</span></h2><p>Have a website idea, a small business to showcase or a project you want to explore? Tell me what you're thinking.</p></div><a class="contact-action-round" href="request.html" aria-label="Start a project request">↗<small>Start a project</small></a></div></section>
+  </main>
+  <footer class="site-footer">
+    <div class="shell">
+      <div class="footer-main">
+        <a class="footer-brand" href="index.html"><span class="brand-icon"><span class="brand-initial">S</span></span> SOHAM</a>
+        <div class="footer-links"><a href="about.html">About</a><a href="mywork.html">My work</a><a href="contact.html">Contact</a><a href="request.html">Start a project ↗</a></div>
+      </div>
+      <div class="footer-note"><span>Designed with intention · Built for the web</span><span>© <span id="year"></span> Soham Borase</span></div>
     </div>
-
-    <!-- ================= NAVBAR ================= -->
-
-<nav class="navbar">
-
-<div class="nav-container">
-
-<div class="logo">
-
-<div class="logo-circle"></div>
-
-<h2>SOHAM</h2>
-
-</div>
-
-<ul class="nav-menu">
-
-<li><a href="#">Home</a></li>
-
-<li><a href="#services">Services</a></li>
-
-<li><a href="#projects">Projects</a></li>
-
-<li><a href="#about">About</a></li>
-
-</ul>
-
-<a href="request.html" class="hire-btn">
-
-Hire Me
-
-</a>
-
-</div>
-
-</nav>
-
-    <!-- ================= HERO ================= -->
-
-<section class="hero">
-
-    <div class="container hero-container">
-
-        <!-- LEFT -->
-
-        <div class="hero-left">
-
-            <div class="availability">
-
-                <span class="dot"></span>
-
-                Available For Freelance
-
-            </div>
-
-            <h1>
-
-                Turning Ideas
-
-                <span>
-
-                    Into Premium Experiences.
-
-                </span>
-
-            </h1>
-
-            <p>
-
-                I create premium websites with modern UI,
-                smooth animations and responsive layouts
-                that help businesses and creators stand out.
-
-            </p>
-
-            <div class="hero-buttons">
-
-                <a href="#projects" class="primary-btn">
-
-                    View My Work
-
-                </a>
-
-                <a href="request.html" class="secondary-btn">
-
-                    Build Your Website
-
-                </a>
-
-            </div>
-
-        </div>
-
-        <!-- RIGHT -->
-
-        <div class="hero-right">
-
-            <div class="card-wrapper">
-
-                <div class="developer-card">
-
-                <div class="glass-shine"></div>
-
-                <h2>SOHAM</h2>
-
-                <p class="role">
-
-                    Frontend Web Developer
-
-                </p>
-
-                <div class="divider"></div>
-
-                <ul>
-
-                    <li>✔ Responsive Websites</li>
-
-                    <li>✔ Modern UI Design</li>
-
-                    <li>✔ Smooth Animations</li>
-
-                    <li>✔ Fast Performance</li>
-
-                </ul>
-                
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-</section>
-
-<section class="services" id="services">
-
-    <div class="section-heading">
-
-        <p class="section-tag">
-            MY SERVICES
-        </p>
-
-        <h2>
-            What I Can Build For You
-        </h2>
-
-        <p>
-            Modern websites designed with clean UI,
-            smooth interactions and great performance.
-        </p>
-
-    </div>
-
-
-    <div class="service-grid">
-
-
-        <div class="service-card">
-
-            <div class="service-icon">
-                🌐
-            </div>
-
-            <h3>
-                Website Development
-            </h3>
-
-            <p>
-                Responsive and modern websites
-                built for businesses, creators
-                and personal brands.
-            </p>
-
-        </div>
-
-
-
-        <div class="service-card">
-
-            <div class="service-icon">
-                🎨
-            </div>
-
-            <h3>
-                UI/UX Design
-            </h3>
-
-            <p>
-                Beautiful interfaces with
-                premium layouts and smooth
-                user experience.
-            </p>
-
-        </div>
-
-
-
-        <div class="service-card">
-
-            <div class="service-icon">
-                ⚡
-            </div>
-
-            <h3>
-                Performance
-            </h3>
-
-            <p>
-                Fast loading websites optimized
-                for a better user experience.
-            </p>
-
-        </div>
-
-
-    </div>
-
-</section>
-
-<section class="projects" id="projects">
-
-    <div class="section-heading">
-
-        <p class="section-tag">
-            MY PROJECTS
-        </p>
-
-        <h2>
-            Featured Work
-        </h2>
-
-        <p>
-            A collection of websites and designs
-            I have created.
-        </p>
-
-    </div>
-
-
-    <div class="project-grid">
-
-
-        <!-- Project 1 -->
-
-        <div class="project-card">
-
-            <div class="project-preview">
-                <img src="images/zenvixz.png" alt="Try again later">
-            </div>
-
-
-            <div class="project-content">
-
-                <h3>
-                    Zenvixz
-                </h3>
-
-                <p>
-                    A modern YouTube channel website
-                    designed to showcase content,
-                    branding and creator identity.
-                </p>
-
-
-                <div class="tech-stack">
-
-                    <span>HTML</span>
-                    <span>CSS</span>
-                    <span>JavaScript</span>
-
-                </div>
-
-
-                <a href="https://zenvixz.vercel.app/" target="_blank">
-                    Visit Project →
-                </a>
-
-            </div>
-
-        </div>
-
-
-
-        <!-- Project 2 -->
-
-        <div class="project-card">
-
-            <div class="project-preview">
-                <img src="images/rohini.png" alt="Try Again Later">
-            </div>
-
-
-            <div class="project-content">
-
-                <h3>
-                    Rohini's Beauty Salon
-                </h3>
-
-                <p>
-                    A professional business website
-                    created for online presence.
-                </p>
-
-
-                <div class="tech-stack">
-
-                    <span>HTML</span>
-                    <span>CSS</span>
-                    <span>JS</span>
-
-                </div>
-
-
-                <a href="https://rohini-salon.vercel.app/">
-                    Visit Project →
-                </a>
-
-            </div>
-
-        </div>
-
-
-
-        <!-- Project 3 -->
-
-        <div class="project-card">
-
-            <div class="project-preview">
-                Your Idea, Next.
-            </div>
-
-
-            <div class="project-content">
-
-                <h3>
-                    Custom Website
-                </h3>
-
-                <p>
-                    Let's create a modern website
-                    that represents your brand.
-                </p>
-
-
-                <div class="tech-stack">
-
-                    <span>UI Design</span>
-                    <span>Responsive</span>
-
-                </div>
-
-
-                <a href="request.html">
-                    START CREATING
-                </a>
-
-            </div>
-
-        </div>
-
-
-    </div>
-
-
-</section>
-
-<section class="about" id="about">
-
-
-    <div class="about-container">
-
-
-        <div class="about-card">
-
-
-            <div class="about-avatar">
-
-                SOHAM
-
-            </div>
-
-
-            <h3>
-                Web Developer
-            </h3>
-
-
-            <p>
-                Creating modern websites
-                with premium designs.
-            </p>
-
-
-        </div>
-
-
-
-        <div class="about-content">
-
-
-            <p class="section-tag">
-                ABOUT ME
-            </p>
-
-
-            <h2>
-                Turning Ideas Into
-                Digital Experiences
-            </h2>
-
-
-            <p>
-
-                Hi, I'm Soham. I design and
-                develop modern websites with
-                clean interfaces, smooth
-                animations and focus on user
-                experience.
-
-            </p>
-
-
-            <p>
-
-                My goal is to help creators,
-                businesses and individuals
-                build a strong online presence.
-
-            </p>
-
-
-
-            <div class="skills">
-
-
-                <span>HTML</span>
-
-                <span>CSS</span>
-
-                <span>JavaScript</span>
-
-                <span>UI Design</span>
-
-
-            </div>
-
-
-        </div>
-
-
-    </div>
-
-
-</section>
-
-    <!-- ================= UPCOMING SECTIONS ================= -->
-
-    <section id="projects"></section>
-
-    <section id="about"></section>
-
-    <section id="contact"></section>
-
-    <!-- JavaScript -->
-
-    <script src="js/app.js"></script>
-    <script src="js/cursor.js"></script>
-    <script src="js/particles.js"></script>
-
+  </footer>
+  <script>document.getElementById('year')?.replaceChildren(document.createTextNode(new Date().getFullYear()));</script>
+  <script src="js/app.js" defer></script>
 </body>
-
 </html>
